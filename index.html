@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Гибкое тело с Екатериной Поповой</title>
+
+<!-- favicon -->
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#7f9c96',
+            bg: '#f4f7f6',
+            highlight: '#e3edea',
+            text: '#333'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body class="bg-bg text-text font-sans">
+
+  <header class="flex justify-between items-center p-4 bg-white sticky top-0 z-50">
+    <a href="#" class="text-xl font-semibold text-accent">Екатерина Попова</a>
+    <nav class="hidden md:block">
+      <ul class="flex gap-6">
+        <li><a href="#about" class="text-base hover:text-accent">Обо мне</a></li>
+        <li><a href="#tariffs" class="text-base hover:text-accent">Тарифы</a></li>
+        <li><a href="#video" class="text-base hover:text-accent">Видео</a></li>
+        <li><a href="#faq" class="text-base hover:text-accent">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="flex gap-4 text-xl text-text">
+      <a href="https://www.instagram.com/_eka_stretching/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me/eka_stretching" target="_blank"><i class="fa-brands fa-telegram-plane"></i></a>
+      <a href="https://wa.me/79677113494" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero"
+  class="relative grid grid-cols-1 md:grid-cols-2 items-center min-h-[70vh] p-8 px-6 text-white"
+  style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
+  
+  <!-- затемнение -->
+  <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+  <!-- текст -->
+  <div class="hero-text relative z-10 text-center md:text-left max-w-xl">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 font-medium">
+      Создай гибкое и красивое тело с Екатериной Поповой
+    </h1>
+    <p class="text-base text-gray-100 mb-8">
+      Занимайся онлайн или офлайн по авторской методике, подходящей для любого уровня.
+    </p>
+    <a href="#contact" class="inline-block px-8 py-3 bg-accent text-white rounded-full text-sm sm:text-base hover:bg-green-600 transition focus:ring">
+      Записаться на пробное занятие
+    </a>
+  </div>
+
+  <!-- пустая колонка справа (можно убрать или использовать под изображение) -->
+  <div class="relative z-10 hidden md:block"></div>
+</section>
+
+
+
+
+  <!-- Features Section -->
+  <section id="features" class="flex justify-around items-center flex-wrap gap-8 py-8 px-4">
+    <div class="flex flex-col items-center text-center">
+      <i class="fa-solid fa-user text-2xl text-accent mb-2"></i>
+      <span class="text-sm">Индивидуальный подход</span>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <i class="fa-solid fa-laptop text-2xl text-accent mb-2"></i>
+      <span class="text-sm">Онлайн и офлайн</span>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <i class="fa-solid fa-bolt text-2xl text-accent mb-2"></i>
+      <span class="text-sm">Быстрый результат</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-8 px-4 max-w-3xl mx-auto">
+    <h2 class="text-center text-3xl text-accent mb-4">Обо мне</h2>
+    <p class="mb-4 leading-relaxed">Привет, меня зовут Катя, я сертифицированный тренер по растяжке и коррекции фигуры. Моя цель — помочь тебе раскрыть возможности своего тела через грамотные и безопасные тренировки. Я работаю с людьми любого уровня подготовки и создаю программы, которые позволяют развивать гибкость, улучшать осанку и укреплять мышцы, используя собственный вес и небольшое дополнительное оборудования.</p>
+    <p class="mb-4">Со мной ты сможешь:</p>
+    <ul class="list-disc list-inside mb-4">
+      <li>увеличить подвижность суставов и гибкость тела,</li>
+      <li>сформировать красивую и подтянутую фигуру,</li>
+      <li>избавиться от зажимов и болей в теле,</li>
+      <li>почувствовать лёгкость и уверенность в себе.</li>
+    </ul>
+    <p class="leading-relaxed">Мои тренировки проходят в уютной, доброжелательной атмосфере и легко вписываются в твой ритм жизни — всё, что нужно, это немного пространства, коврик и желание заботиться о себе.</p>
+  </section>
+
+  <!-- Tariffs Section -->
+  <section id="tariffs" class="py-8 px-4 max-w-3xl mx-auto">
+    <h2 class="text-center text-3xl text-accent mb-4">Тарифы</h2>
+    <div class="flex flex-wrap gap-4">
+      <div class="flex-1 min-w-[220px] bg-white p-4 rounded-xl">
+        <h3 class="inline-block mb-2 px-4 py-2 bg-highlight rounded-xl text-accent">Персональная тренировка</h3>
+        <ul>
+          <li class="my-1">Время: 55 минут</li>
+          <li class="my-1">Стоимость: 2 700 ₽</li>
+        </ul>
+      </div>
+      <div class="flex-1 min-w-[220px] bg-white p-4 rounded-xl">
+        <h3 class="inline-block mb-2 px-4 py-2 bg-highlight rounded-xl text-accent">Абонемент</h3>
+        <ul>
+          <li class="my-1">Время: 55 минут</li>
+          <li class="my-1">5 занятий — 12 000 ₽</li>
+          <li class="my-1">8 занятий — 19 000 ₽</li>
+          <li class="my-1">12 занятий — 27 000 ₽</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Carousel Section -->
+  <section id="video" class="py-8 px-4 max-w-3xl mx-auto">
+    <h2 class="text-center text-3xl text-accent mb-4">Смотри как проходят тренировки</h2>
+    <div class="swiper w-full py-4">
+      <div class="swiper-wrapper flex">
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q1.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q2.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q3.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q4.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q5.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q6.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q7.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+        <div class="swiper-slide flex-shrink-0 w-4/5 max-w-xs flex justify-center"><video src="videos/q8.mp4" muted autoplay playsinline loop class="w-full aspect-[9/16] rounded-xl bg-black"></video></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-8 px-4 max-w-3xl mx-auto">
+    <h2 class="text-center text-3xl text-accent mb-4">Часто задаваемые вопросы</h2>
+    <details class="bg-highlight p-4 rounded-xl mb-4"><summary class="font-bold cursor-pointer">Что если я никогда не занималась растяжкой?</summary><p class="mt-2">Это отлично! Я адаптирую программу под твой уровень.</p></details>
+    <details class="bg-highlight p-4 rounded-xl mb-4"><summary class="font-bold cursor-pointer">Сколько длится одно занятие?</summary><p class="mt-2">Обычно тренировка длится 55 минут.</p></details>
+    <details class="bg-highlight p-4 rounded-xl mb-4"><summary class="font-bold cursor-pointer">Мне нужно оборудование?</summary><p class="mt-2">Нет, только коврик и немного свободного пространства.</p></details>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-8 px-4 max-w-3xl mx-auto">
+    <h2 class="text-center text-3xl text-accent mb-4">Обратная связь</h2>
+    <form action="/submit-form" method="POST" class="flex flex-col gap-4">
+      <input type="text" name="name" placeholder="Ваше имя" required class="p-3 border border-gray-300 rounded-lg text-base" />
+      <input type="tel" name="phone" placeholder="Номер телефона" required class="p-3 border border-gray-300 rounded-lg text-base" />
+      <textarea name="message" rows="4" placeholder="Ваше сообщение" required class="p-3 border border-gray-300 rounded-lg text-base"></textarea>
+      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      <button type="submit" class="p-3 bg-accent text-white rounded-lg text-base hover:bg-green-600 transition">Отправить</button>
+    </form>
+    <p class="mt-4 text-sm text-gray-500">Не забудьте заменить <code>YOUR_SITE_KEY</code> на реальный ключ reCAPTCHA и настроить серверную верификацию.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-highlight py-6 text-center text-text">
+    <p>&copy; 2025 Екатерина Попова. Все права защищены.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 20,
+        speed: 800,
+        autoplay: { delay: 6000, disableOnInteraction: false }
+      });
+    });
+  </script>
+
+</body>
+</html>
